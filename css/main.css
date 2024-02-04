@@ -209,6 +209,11 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #1E1E24;
+  width: 100%;
 }
 
 .bar {
@@ -556,12 +561,12 @@ h3.project-title {
     display: flex;
     margin: 50px auto;
     text-align: left;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: center;
   }
 
   .about-info {
-    width: 100%;
+    width: 60%;
     display: block;
   }
 
@@ -570,7 +575,7 @@ h3.project-title {
   }
 
   .circular-square {
-    width: 50%;
+    width: 65%;
   }
 
   /*Skills*/
@@ -612,6 +617,8 @@ h3.project-title {
   #main-nav {
     box-shadow: none;
     margin: 0 50px;
+    position: relative;
+    width: auto;
   }
 
   .nav-menu {
@@ -651,6 +658,14 @@ h3.project-title {
   }
 
   /*About*/
+
+  #about .content-wrapper {
+    flex-direction: row-reverse;
+  }
+
+  .about-info {
+    width: 60%;
+  }
 
   .headshot-image {
     width: 50%;
