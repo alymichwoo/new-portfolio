@@ -366,13 +366,24 @@ footer {
 .skills-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  margin-top: 15px;
 }
 
-li.skill {
+.skill {
+  margin: 5px;
+}
+
+.skill-name {
+  color: #919191;
+  text-align: center;
+  font-size: 0.85em;
+}
+
+.skill i {
   padding: 12px;
   color: #e7ecef;
-  font-size: 7.3em;
+  font-size: 6em;
 }
 
 /******************** Portfolio Styles ********************/
@@ -542,7 +553,7 @@ h3.project-title {
 @media only screen and (min-width: 768px) {
   /*Tablet styles here*/
 
-  /*General*/
+  /****** General ******/
   .content-wrapper {
     max-width: 80%;
   }
@@ -557,7 +568,7 @@ h3.project-title {
     margin-top: 25px;
   }
 
-  /*About*/
+  /****** About ******/
   #about .content-wrapper {
     display: flex;
     margin: 50px auto;
@@ -579,16 +590,24 @@ h3.project-title {
     width: 65%;
   }
 
-  /*Skills*/
-  li.skill {
+  /****** Skills ******/
+  .skill i {
     font-size: 8.3em;
-    width: 30%;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 25px;
   }
 
-  /*Portfolio*/
+  .skill {
+    margin: 30px;
+  }
+
+  .skill-name {
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
+  /****** Portfoli *****o*/
   .portfolio-item {
     width: 45%;
   }
@@ -597,7 +616,7 @@ h3.project-title {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
-  /*General*/
+  /***** General *****/
   p {
     font-size: 1.2em;
   }
@@ -614,7 +633,7 @@ h3.project-title {
     font-size: 1.3em;
   }
 
-  /*Navigation*/
+  /****** Navigation ******/
   #main-nav {
     box-shadow: none;
     margin: 0 50px;
@@ -649,7 +668,7 @@ h3.project-title {
     display: none;
   }
 
-  /*Hero*/
+  /****** Hero ******/
   .hero-title {
     margin-top: 50px;
   }
@@ -658,8 +677,7 @@ h3.project-title {
     margin-top: 25px;
   }
 
-  /*About*/
-
+  /****** Abou *****t*/
   #about .content-wrapper {
     flex-direction: row-reverse;
   }
@@ -676,18 +694,23 @@ h3.project-title {
     width: 60%;
   }
 
-  /*Porfolio*/
+  /****** Skills ******/
+  .skill {
+    margin: 50px;
+  }
+
+  /****** Porfolio ******/
   .portfolio-item {
     max-width: 500px;
     margin: 30px;
   }
 
-  /*Contact*/
+  /****** Contact ******/
   .connect-email {
     font-size: 1.3em;
   }
 
-  /*Footer*/
+  /****** Footer ******/
   .footer-icon {
     font-size: 2.5em;
     margin: 40px 50px 0 0;
